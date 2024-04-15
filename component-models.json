@@ -3,7 +3,7 @@
         "id": "title",
         "fields": [
             {
-                "component": "text-input",
+        	"component": "text",
                 "valueType": "string",
                 "name": "jcr:title",
                 "value": "",
@@ -55,7 +55,7 @@
                 "multi": false
             },
             {
-                "component": "text-input",
+        	"component": "text",
                 "valueType": "string",
                 "name": "alt",
                 "value": "Default alt",
@@ -64,17 +64,64 @@
         ]
     },
     {
+    "id": "button",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Title"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "value": "",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
+          }
+        ]
+      }
+    ]
+  },
+  {
         "id": "columns",
         "fields": [
             {
-                "component": "text-input",
+                "component": "text",
                 "valueType": "number",
                 "name": "columns",
                 "value": "",
                 "label": "Columns"
             },
             {
-                "component": "text-input",
+                "component": "text",
                 "valueType": "number",
                 "name": "rows",
                 "value": "",
@@ -93,7 +140,7 @@
                 "multi": false
             },
             {
-                "component": "text-area",
+                "component": "richtext",
                 "name": "text",
                 "value": "",
                 "label": "Text",
@@ -105,7 +152,7 @@
         "id": "section",
         "fields": [
             {
-                "component": "text-input",
+                "component": "text",
                 "name": "style",
                 "value": "",
                 "label": "Style",
@@ -124,14 +171,14 @@
                 "multi": false
             },
             {
-                "component": "text-input",
+                "component": "text",
                 "valueType": "string",
                 "name": "imageAlt",
                 "label": "Alt",
                 "value": ""
             },
             {
-                "component": "text-area",
+                "component": "richtext",
                 "name": "text",
                 "value": "",
                 "label": "Text",
@@ -173,7 +220,7 @@
                 ]
             },
             {
-                "component": "text-input",
+                "component": "text",
                 "name": "restEndpointPostUrl",
                 "label": "URL For POST request",
                 "valueType": "string",
@@ -194,7 +241,7 @@
         ]
     },
     {
-        "id": "text-input",
+        "id": "text",
         "fields": [
             {
                 "component": "container",
@@ -203,26 +250,26 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "placeholder",
                         "label": "Placeholder text",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "dataRef",
                         "label": "Bind reference",
                         "valueType": "string"
@@ -248,7 +295,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "default",
                         "label": "Default Value",
                         "valueType": "string"
@@ -398,26 +445,26 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "placeholder",
                         "label": "Placeholder text",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "dataRef",
                         "label": "Bind reference",
                         "valueType": "string"
@@ -443,7 +490,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "default",
                         "label": "Default Value",
                         "valueType": "string"
@@ -613,26 +660,26 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "placeholder",
                         "label": "Placeholder text",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "dataRef",
                         "label": "Bind reference",
                         "valueType": "string"
@@ -658,7 +705,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "default",
                         "label": "Default Value",
                         "valueType": "string"
@@ -808,14 +855,14 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
@@ -827,7 +874,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "dataRef",
                         "label": "Bind reference",
                         "valueType": "string"
@@ -991,14 +1038,14 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
@@ -1016,7 +1063,7 @@
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "dataRef",
                         "label": "Bind reference",
                         "valueType": "string"
@@ -1103,20 +1150,20 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "dataRef",
                         "label": "Bind reference",
                         "valueType": "string"
@@ -1168,7 +1215,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "checkedValue",
                         "label": "When Checked, return value",
                         "valueType": "string"
@@ -1180,7 +1227,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "default",
                         "label": "Default Value",
                         "valueType": "string"
@@ -1200,7 +1247,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "mandatoryMessage",
                         "label": "Error Message",
                         "valueType": "string",
@@ -1240,34 +1287,34 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "enum",
                         "label": "Options (Data Value)",
                         "valueType": "string",
                         "multi": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "enumNames",
                         "label": "Options (Display Value)",
                         "valueType": "string",
                         "multi": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "placeholder",
                         "label": "Placeholder text",
                         "valueType": "string"
@@ -1293,7 +1340,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "default",
                         "label": "Default Value",
                         "valueType": "string"
@@ -1339,7 +1386,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "mandatoryMessage",
                         "label": "Error Message",
                         "valueType": "string",
@@ -1436,34 +1483,34 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "enum",
                         "label": "Options (Data Value)",
                         "valueType": "string",
                         "multi": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "enumNames",
                         "label": "Options (Display Value)",
                         "valueType": "string",
                         "multi": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "dataRef",
                         "label": "Bind reference",
                         "valueType": "string"
@@ -1495,7 +1542,7 @@
                         ]
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "default",
                         "label": "Default option",
                         "valueType": "string"
@@ -1571,7 +1618,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "mandatoryMessage",
                         "label": "Error Message",
                         "valueType": "string",
@@ -1591,7 +1638,7 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
@@ -1630,26 +1677,26 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "placeholder",
                         "label": "Placeholder text",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "dataRef",
                         "label": "Bind reference",
                         "valueType": "string"
@@ -1675,7 +1722,7 @@
                         "valueType": "boolean"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "default",
                         "label": "Default Value",
                         "valueType": "string"
@@ -1825,26 +1872,26 @@
                 "collapsible": false,
                 "fields": [
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "name",
                         "label": "Name",
                         "valueType": "string",
                         "required": true
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "jcr:title",
                         "label": "Label",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "placeholder",
                         "label": "Placeholder text",
                         "valueType": "string"
                     },
                     {
-                        "component": "text-input",
+                        "component": "text",
                         "name": "dataRef",
                         "label": "Bind reference",
                         "valueType": "string"
@@ -1974,14 +2021,14 @@
         "id": "form-image",
         "fields": [
             {
-                "component": "text-input",
+                "component": "text",
                 "name": "name",
                 "label": "Name",
                 "valueType": "string",
                 "required": true
             },
             {
-                "component": "text-input",
+                "component": "text",
                 "name": "jcr:title",
                 "label": "Label",
                 "valueType": "string"
@@ -1994,7 +2041,7 @@
                 "multi": false
             },
             {
-                "component": "text-input",
+                "component": "text",
                 "valueType": "string",
                 "name": "altText",
                 "label": "Alternate text"
