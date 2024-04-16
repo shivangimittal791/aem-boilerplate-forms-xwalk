@@ -1863,7 +1863,7 @@
         ]
     },
     {
-        "id": "button",
+        "id": "form-button",
         "fields": [
             {
                 "component": "container",

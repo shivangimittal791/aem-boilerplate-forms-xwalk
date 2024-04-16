@@ -41,7 +41,7 @@ function annotateItems(items, formDefinition, formFieldMap) {
                 if (fd.properties["fd:fragment"]) {
                     fieldWrapper.setAttribute('data-aue-model', "fragment");
                 } else {
-                    fieldWrapper.setAttribute('data-aue-model', fd.fieldType === 'image'? 'form-image': fd.fieldType);
+                    fieldWrapper.setAttribute('data-aue-model', fd.fieldType === 'image' ||  fd.fieldType === 'button' ? `form-${fd.fieldType}`: fd.fieldType);
                 }
                 fieldWrapper.setAttribute('data-aue-label', fd.name);
             } else {

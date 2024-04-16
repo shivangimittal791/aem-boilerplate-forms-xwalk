@@ -230,7 +230,7 @@
         },
         {
           "title": "Button",
-          "id": "button",
+          "id": "form-button",
           "plugins": {
             "xwalk": {
               "page": {
