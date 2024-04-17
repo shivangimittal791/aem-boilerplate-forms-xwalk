@@ -257,6 +257,22 @@
               }
             }
           }
+        },
+        {
+          "title": "Submit",
+          "id": "form-submit-button",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/fd/components/form/actions/submit/v1/submit",
+                "template": {
+                  "jcr:title": "Submit",
+                  "buttonType": "submit",
+                  "fieldType": "button"
+                }
+              }
+            }
+          }
         }
       ]
     },
